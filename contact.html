@@ -96,6 +96,16 @@
         letter-spacing: 1px;
       }
     </style>
+    <audio id="bg-audio" src="videoplayback (mp3cut.net).mp3" loop></audio>
+    <script>
+      const audio = document.getElementById("bg-audio");
+      const savedTime = sessionStorage.getItem("audioTime");
+      if (savedTime) audio.currentTime = parseFloat(savedTime);
+      audio.play().catch(() => {});
+      window.addEventListener("beforeunload", () => {
+        sessionStorage.setItem("audioTime", audio.currentTime);
+      });
+    </script>
 
     <script>
       function togglemenu() {

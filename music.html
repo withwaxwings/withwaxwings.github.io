@@ -33,6 +33,16 @@
         <p>my favourite release of 2024, an album that blends shoegaze, mathcore, breakcore and thall without it sounding jarring. There is a very conforming slop-esque version of modern metal made up of low tuned guitars and cloying electronic segments and melodic choruses, which on the surface, fromjoy does but there is enough mathcore and breakcore DNA to make the music fundamentally different. The art and creative direction for this album is also great if you're into more eclectic y2k and ps2 inspired design</p>
      </div>
     </div>
+    <audio id="bg-audio" src="videoplayback (mp3cut.net).mp3" loop></audio>
+    <script>
+      const audio = document.getElementById("bg-audio");
+      const savedTime = sessionStorage.getItem("audioTime");
+      if (savedTime) audio.currentTime = parseFloat(savedTime);
+      audio.play().catch(() => {});
+      window.addEventListener("beforeunload", () => {
+        sessionStorage.setItem("audioTime", audio.currentTime);
+      });
+    </script>
     <script>
       function togglemenu() {
         const menu = document.getElementById("menu");
