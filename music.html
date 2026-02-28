@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>music</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="rain-canvas"></canvas>
+    <div class="window" id="myWindow">
+      <div class="window-titlebar">
+        <span>✦ neel ✦</span>
+        <button onclick="document.getElementById('myWindow').style.display='none'">✕</button>
+      </div>
+      <div class="hamburger" onclick="togglemenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu" style="display: none;">
+        <a href="index.html">home</a>
+        <a href="resume.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <h2>cool music.</h2>
+      <div style="display: flex; align-items: flex-start; gap: 15px;">
+        <img src="助川敏弥-toshiya-sukegawa-biocic-music-aqua-バイオシック・ミュージック-「水」-Cover-Art.webp" alt="">
+        <h3>Bioçic Music: Aqua - Toshiya Sukegawa </h3>
+        <p>a great environmental album from composer Toshiya Sukegawa, it's full of great moments that are full of nostalgia. The album is reminds me of watching ghibli films for the first time as a child, it combines these ambient moments with synths to create these beutiful, bright swells. Throughout its run time it's mostly gentle but there are a few tense moments interlaced between.</p>
+     </div>
+     <div style="display: flex; align-items:flex-start;gap: 15px;">
+        <img src="OIP-2739842577.0Oqcm6hRnco_QCHrZOge3gHaHa" alt="">
+        <h3>fromjoy - fromjoy</h3>
+        <p>my favourite release of 2024, an album that blends shoegaze, mathcore, breakcore and thall without it sounding jarring. There is a very conforming slop-esque version of modern metal made up of low tuned guitars and cloying electronic segments and melodic choruses, which on the surface, fromjoy does but there is enough mathcore and breakcore DNA to make the music fundamentally different. The art and creative direction for this album is also great if you're into more eclectic y2k and ps2 inspired design</p>
+     </div>
+    </div>
+    <script>
+      function togglemenu() {
+        const menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+    <script src="rain.js"></script>
+  </body>
+</html>

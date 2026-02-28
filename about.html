@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="rain-canvas"></canvas>
+    <div class="window" id="neel">
+      <div class="window-titlebar">
+        <span>✦ neel ✦</span>
+        <button onclick="document.getElementById('myWindow').style.display='none'">✕</button>
+      </div>
+      <div class="hamburger" onclick="togglemenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu" style="display: none;">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <h2>about.</h2>
+    </div>
+    <script>
+      function togglemenu() {
+        const menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+    <script src="rain.js"></script>
+  </body>
+</html>

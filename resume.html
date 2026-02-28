@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>resume</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="rain-canvas"></canvas>
+    <div class="window" id="myWindow">
+      <div class="window-titlebar">
+        <span>✦ neel ✦</span>
+        <button onclick="document.getElementById('myWindow').style.display='none'">✕</button>
+      </div>
+      <div class="hamburger" onclick="togglemenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu" style="display: none;">
+        <a href="index.html">home</a>
+        <a href="resume.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+        <a href="music.html">cool music</a>
+      </nav>
+      <h2>resume.</h2>
+      <p>education</p>
+      <ul>
+        <li>Bachelor of Information Technology (Professional) - RMIT (2029)</li>
+      </ul>
+      <p>certifications</p>
+      <ul>
+        <li>compTIA Networks+ (2026)</li>
+      </ul>
+    </div>
+    <script>
+      function togglemenu() {
+        const menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+    <script src="rain.js"></script>
+  </body>
+</html>

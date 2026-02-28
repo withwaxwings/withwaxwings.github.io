@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="rain-canvas"></canvas>
+    <div class="window" id="myWindow">
+      <div class="window-titlebar">
+        <span>✦ neel ✦</span>
+        <button onclick="document.getElementById('myWindow').style.display='none'">✕</button>
+      </div>
+      <div class="hamburger" onclick="togglemenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu" style="display: none;">
+        <a href="index.html">home</a>
+        <a href="resume.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+        <a href="music.html">cool music</a>
+
+      </nav>
+      <h2>home.</h2>
+      <p>I'm Neel and I'm currently an studying a Bachelor of IT (Professional) at the Royal Melbourne Institute of Technology, my passions are homelabbing, building model kits, playing the guitar and reading, particularly ancient history. This website is to serve as my digital home and porfolio/resume, somewhere to dump my thoughts, show off my projects, and connect with people.</p>
+      <p>Within of tech I'm particularly interested in networking, self-hosting, and IT infrastructure as these are things I've explored hands-on through my homelab.</p>
+      <p>Outside of tech I enjoy building model kits like Gundams to fulfil my creative needs, I also really enjoy ancient history due to the abusrdity of it. I also enjoy playing the guitar as a creative outlet and have been involved in bands before, my favourite genres are metalcore, hardcore and progressive metal</p>
+      <p>Kind Regards,</p>
+      <p>Neel.</p>
+    </div>
+    
+    <script>
+      function togglemenu() {
+        const menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+    <script src="rain.js"></script>
+  </body>
+</html>

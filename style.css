@@ -1,0 +1,116 @@
+body {
+  background-image: url('bluddington.jpg');
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  overflow-y: auto;
+}
+  body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .window {
+        width: 1000px;
+        height: 600px;
+        background: #0a0f1a;
+        border: 1px solid #3a5a7a;
+        box-shadow: 0 0 20px #1a3a5a, 4px 4px 0px #000;
+        z-index: 999;
+        color: #a8c8e8;
+        background: rgba(10, 15, 26, 0.6);
+      }
+
+      .window-titlebar {
+        background: #0d1f33;
+        color: #c8dff0;
+        padding: 6px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+        border-bottom: 1px solid #3a5a7a;
+        font-family: monospace;
+        letter-spacing: 2px;
+      }
+
+      .window-titlebar button {
+        background: none;
+        border: 1px solid #3a5a7a;
+        color: #a8c8e8;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 1px 5px;
+      }
+
+      .window-titlebar button:hover {
+        background: #1a3a5a;
+      }
+
+      .window-content {
+        padding: 16px;
+        font-family: monospace;
+        color: #a8c8e8;
+        
+      }
+
+      .hamburger{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: fit-content;
+        padding: 5px;
+      }
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #a8c8e8;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #a8c8e8;
+  text-decoration: none;
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+nav a:hover {
+  color: #c8dff0;
+}
+
+p{
+  padding: 10px;
+}
+h2{
+  padding: 5px;
+}
+img{
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+}
+h3{
+  padding: 10px;
+}
+
+#rain-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
